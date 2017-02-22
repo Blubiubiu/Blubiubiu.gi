@@ -2,12 +2,94 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>demo</title>
+	<title>Blubiubiu</title>
+	<link rel="stylesheet" href="src/css/cssreset.css">
+	<link rel="stylesheet" href="src/css/common.css">
+	<link rel="stylesheet" href="src/css/index.css">
 </head>
 <body>
-	
+
+	<header>
+		
+		<nav>
+			
+			
+
+		</nav>
+
+	</header>
+
+	<section>
+		
+	</section>
+
+	<aside>
+		
+	</aside>
+
+	<footer>
+		
+	</footer>
+
+
+
 	<a href="https://blubiubiu.github.io/kllife/pc/final/private/html">pc</a>
-	<br>
+	
 	<a href="https://blubiubiu.github.io/kllife/phone/private/index">mobile</a>
+
+	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999; background: url(src/images/bg.jpg); background-attachment: fixed; background-size: 100% 100%;"></div>
+	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999;"></div>
+
+	<script>
+		//获得header
+		var oHeader = document.getElementsByTagName('header')[0];
+			
+		//headroom
+		function wheel(event) {
+			event = event || window.event;
+			var delta = 0;
+			if (event.wheelDelta) {
+				//取值±120
+		        //delta = event.wheelDelta/120;
+		        delta = event.wheelDelta; 
+		        if (window.opera) {
+		        	delta = -delta;
+		        }
+		    } else if (event.detail) {
+		    	//ff 使用detail,取值±3
+		        //delta = -event.detail/3;
+		        delta = -event.detail;
+		    }
+		    //滚轮向上>0  向下<0 且在小于200高度时禁止触发
+		    if(delta > 0){
+		    	oHeader.className = 'header-up'
+		    }else if(delta < 0 && document.body.scrollTop >= 200){
+		    	oHeader.className = 'header-down';
+		    }  
+		};
+
+		//ff & chrome 绑定
+	    if (window.addEventListener){
+			window.addEventListener('DOMMouseScroll', wheel, false);
+		}
+		//ie绑定
+		window.onmousewheel = document.onmousewheel = wheel;
+
+		
+		
+	</script>
 </body>
 </html>
