@@ -1,3 +1,3 @@
-header { position: fixed; width: 100%; height: 50px; border-bottom: 1px solid #eee; transition: transform 200ms linear; }
-.header-down { -moz-box-shadow: 0px 2px 1px #888; box-shadow: 0px 2px 1px #888; transform: translateY(-100%); }
-.header-up { -moz-box-shadow: 0px 0px 0px #888; box-shadow: 0px 0px 0px #888; transform: translateY(0%); }
+header { position: fixed; width: 100%; height: 50px; border-bottom: 1px solid #eee; transition: transform 200ms linear; -webkit-transition: transform 200ms linear; -moz-transition: transform 200ms linear; -o-transition: transform 200ms linear; -mz-transition: transform 200ms linear; }
+.header-down { -o-box-shadow: 0px 2px 1px #888; -webkit-box-shadow: 0px 2px 1px #888; -ms-box-shadow: 0px 2px 1px #888; -moz-box-shadow: 0px 2px 1px #888; box-shadow: 0px 2px 1px #888; transform: translateY(-100%); }
+.header-up { -o-box-shadow: 0px 2px 1px #888; -ms-box-shadow: 0px 2px 1px #888; -webkit-box-shadow: 0px 2px 1px #888; -moz-box-shadow: 0px 0px 0px #888; box-shadow: 0px 0px 0px #888; transform: translateY(0%); }
