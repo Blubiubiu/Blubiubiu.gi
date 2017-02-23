@@ -12,16 +12,12 @@
 	<header>
 		
 		<nav>
-			
 			<ul>
-				
 				<li><a href="javascript:;">作品</a></li>
 				<li><a href="javascript:;">小工具</a></li>
 				<li><a href="javascript:;">资源</a></li>
 				<li><a href="javascript:;">目标</a></li>
-
 			</ul>
-			
 			<a class="head-img" href="https://blubiubiu.github.io/" target="_blank"><img src="src/images/head.jpg" alt=""></a>
 		</nav>
 
@@ -30,8 +26,45 @@
 	<section>
 		
 		<div id="content">
-			
-			
+			<!-- 推荐作品 -->
+			<div class="works-recommend index-content">
+				
+				<div class="index-top">
+					<h3><img src="src/images/works.png" alt=""><span>推荐作品</span><a href="javascript:;">→ 查看全部作品</a></h3>
+				</div>
+				<div class="index-middle">
+					
+					<div class="index-sublist">
+						<img src="src/images/works1.jpg" alt="">
+						<div class="index-sublist-information">
+							<h4>作品名：企业级官网</h4>
+							<h5>制作时间：<span>2016.09——2017.01</span></h5>
+							<h6>演员：Blubiubiu</h6>
+						</div>
+						<a href="https://blubiubiu.github.io/kllife/pc/final/private/html" target="_blank"></a>
+					</div>
+
+					<div class="index-sublist">
+						<img src="src/images/works1.jpg" alt="">
+						<div class="index-sublist-information">
+							<h4>作品名：企业级官网</h4>
+							<h5>制作时间：<span>2016.09——2017.01</span></h5>
+							<h6>演员：Blubiubiu</h6>
+						</div>
+						<a href="https://blubiubiu.github.io/kllife/pc/final/private/html" target="_blank"></a>
+					</div>
+
+				</div>
+
+
+			</div>
+			<!-- 推荐小工具 -->
+			<div class="gadget-recommend index-content">
+				<div class="index-top">
+					<h3><img src="src/images/works.png" alt=""><span>推荐小工具</span><a href="javascript:;">→ 查看全部作品</a></h3>
+				</div>
+			</div>
+
 
 		</div>
 
@@ -47,11 +80,11 @@
 
 
 
-	<a href="https://blubiubiu.github.io/kllife/pc/final/private/html">pc</a>
+	<a href="">pc</a>
 	
 	<a href="https://blubiubiu.github.io/kllife/phone/private/index">mobile</a>
 
-	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div style="height: 500px; border: 1px solid #999; background: #0075c1;"></div>
 	<div style="height: 500px; border: 1px solid #999;"></div>
 	<div style="height: 500px; border: 1px solid #999;"></div>
 	<div style="height: 500px; border: 1px solid #999;"></div>
@@ -59,7 +92,7 @@
 	<div style="height: 500px; border: 1px solid #999;"></div>
 	<div style="height: 500px; border: 1px solid #999;"></div>
 	<div style="height: 500px; border: 1px solid #999; background: url(src/images/bg.jpg); background-attachment: fixed; background-size: 100% 100%;"></div>
-	<div style="height: 500px; border: 1px solid #999;"></div>
+	<div id="div1" style="height: 500px; border: 1px solid #999;"></div>
 	<div style="height: 500px; border: 1px solid #999;"></div>
 	<div style="height: 500px; border: 1px solid #999;"></div>
 	<div style="height: 500px; border: 1px solid #999;"></div>
@@ -68,5 +101,16 @@
 	<div style="height: 500px; border: 1px solid #999;"></div>
 
 	<script src="src/js/head.js"></script>
+
+	<script>
+		var oDiv = document.getElementById('div1');
+		window.onscroll = function(){
+
+			if(document.body.scrollTop >= 1000){
+				oDiv.style.background = 'red';
+			}
+
+		}
+	</script>
 </body>
 </html>

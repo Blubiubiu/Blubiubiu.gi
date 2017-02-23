@@ -11,10 +11,10 @@ a:hover { text-decoration: none; }
 
 
 
-body { font-size: 14px; font-family: '微软雅黑'; }
-header { position: fixed; width: 100%; height: 50px; border-bottom: 1px solid #eee; background-color: #24292e; transition: transform 200ms linear; -webkit-transition: transform 200ms linear; -moz-transition: transform 200ms linear; -o-transition: transform 200ms linear; -mz-transition: transform 200ms linear; }
-.header-down { -o-box-shadow: 0px 2px 1px #888; -webkit-box-shadow: 0px 2px 1px #888; -ms-box-shadow: 0px 2px 1px #888; -moz-box-shadow: 0px 2px 1px #888; box-shadow: 0px 2px 1px #888; transform: translateY(-100%); }
-.header-up { -o-box-shadow: 0px 2px 1px #888; -ms-box-shadow: 0px 2px 1px #888; -webkit-box-shadow: 0px 2px 1px #888; -moz-box-shadow: 0px 0px 0px #888; box-shadow: 0px 0px 0px #888; transform: translateY(0%); }
+body { font-size: 14px; font-family: '微软雅黑'; background: #f9faf5; }
+header { position: fixed; width: 100%; height: 50px; background-color: #0085c1; transition: transform 200ms linear; -webkit-transition: transform 200ms linear; -moz-transition: transform 200ms linear; -o-transition: transform 200ms linear; -mz-transition: transform 200ms linear; z-index: 9; }
+.header-down { -o-box-shadow: 0px 2px 1px #0085c1; -webkit-box-shadow: 0px 2px 1px #0085c1; -ms-box-shadow: 0px 2px 1px #0085c1; -moz-box-shadow: 0px 2px 1px #0085c1; box-shadow: 0px 2px 1px #0085c1; transform: translateY(-100%); }
+.header-up { -o-box-shadow: 0px 2px 1px #0085c1; -ms-box-shadow: 0px 2px 1px #0085c1; -webkit-box-shadow: 0px 2px 1px #0085c1; -moz-box-shadow: 0px 0px 0px #0085c1; box-shadow: 0px 0px 0px #0085c1; transform: translateY(0%); }
 nav { position: relative; width: 1200px; height: 50px; line-height: 50px; margin: 0 auto; }
 nav ul { width: 1200px; height: 50px; }
 nav ul:after { content:"."; display: block; height: 0; clear: both; visibility: hidden; zoom: 1; }
