@@ -1,3 +1,10 @@
+/*
+
+ name : Blubiubiu.github.io
+ author :  Blubiubiu
+ date : 2017-02-22
+
+*/
 //获得header
 var oHeader = document.getElementsByTagName('header')[0];
 	
@@ -22,7 +29,8 @@ function wheel(event) {
     	oHeader.className = 'header-up'
     }else if(delta < 0 && document.body.scrollTop >= 200){
     	oHeader.className = 'header-down';
-    }  
+    }
+
 };
 
 //ff & chrome 绑定
